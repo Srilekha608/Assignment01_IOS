@@ -50,17 +50,8 @@ else {
 
 //4A
 var N = 10;
-var j:Int ;
-var i:Int=0;
-for i in (1...N)
+for i in (0..<5)
 {
-  print(i)
-   for j in stride(from: 10, to: 1, by: -1)
-    {
-        print(j)
-       }
-    break;
-
-  
-    
-}
+   print(i+1);
+    print(N-i)
+    }
