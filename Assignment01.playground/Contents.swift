@@ -52,6 +52,6 @@ else {
 var N = 10;
 for i in (0..<5)
 {
-   print(i+1);
-    print(N-i)
+   print(i+1,terminator: " ");
+    print(N-i,terminator: " ")
     }
