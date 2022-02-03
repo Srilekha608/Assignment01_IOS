@@ -38,14 +38,20 @@ print ("""
 //**************** QUESTION 2 ****************
 // 2.a) Predict what will happen when you try and execute below three statements when you uncomment the third line?
 
-//var x:Double = 15
-//var y = 25.0
+var x = 15
+var y = 25.0
 //y = x
-//cannot assign int type to a type double
-//y=x
-//print(y)
+//print("cannot assign int type to a type double");
+
+
 
 // 2.b) Fix the error in the question 2.a
+//var x:Double = 15
+
+
+//or another way 
+
+y= Double(x)
 
 
 
@@ -57,15 +63,15 @@ print ("""
 //3.a) Declare three constants x, y, z and assign the values 2, 7, 5. Write a swift code to find the largest number among the three integers.
 
 
-var x:Int = 2;
+var x1:Int = 2;
 var y:Int = 7;
 var z:Int = 5;
 
-if((x > y) && (x > z))
+if((x1 > y) && (x1 > z))
 {
-    print(" \(x) is largest among all the three integers")
+    print(" \(x1) is largest among all the three integers")
 }
- else if((y > x) && (y > z))
+ else if((y > x1) && (y > z))
 {
     print(" \(y) is largest among all the three integers")
 }
@@ -125,6 +131,34 @@ for i in (0..<5)
 
 var c:Int = 5;
 
+var C = 5
+
+for i in 1...C {
+    for j in 0..<(C-i) {
+        print(" ", terminator: "")
+    }
+
+    for j in 1...2*i-1 {
+        print("*", terminator: "")
+    }
+    print("")
+}
+
+if (C > 1) {
+    for j in 2...C {
+        var i = C - j + 1
+        for k in 0..<(C-i) {
+            print(" ", terminator: "")
+        }
+
+        for k in 1...2*i-1 {
+            print("*", terminator: "")
+        }
+        print("")
+    }
+}
+print("------------------------------")
+
 
 
 //**************** END OF QUESTION 4 ****************
@@ -144,6 +178,7 @@ print("A" + string)
 }
 
 //5.b) Declare a String str1 and and assign the value of your own. Write a swift code to add the last character at the front and back of the given string and print it.
+
 var str1:String = "rilekha"
 var result = str1[str1.index(before: str1.endIndex)]
              print("\(result)\(str1)\(result)")
@@ -161,14 +196,11 @@ print(reverseStr)
  //expected output bab
 
 
-
-
-
-
-
-
-
-
+var myString1 = "ababa"
+if myString1.first == myString1.last {
+    myString1.remove(at: myString1.startIndex)
+    myString1.remove(at: myString1.index(before: myString1.endIndex))
+    print(myString1)
 
 
 //**************** END OF QUESTION 5 ****************
