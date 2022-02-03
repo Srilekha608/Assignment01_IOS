@@ -6,11 +6,15 @@ When you open this file  in Xcode, it is normal that you see errors in the sourc
 //**************** QUESTION 1 ****************
 // 1.a) Declare a variable called  distance of type Double, using type annotation
 
+var distance:Double
+
 // 1.b) Declare a constant called  maxWeight of type an Int, with a value of 130, using type annotation
+
+let maxWeight:Int = 130;
+
+
 // 1.c) Print  "Your max weight is xxxx pounds", replacing the xxxx with the value of maxWeight. Use String interpolation
 
-var distance:Double
-let maxWeight:Int = 130;
 print("Your max weight is \(maxWeight) pounds");
 print("\r------------------------------")
 
