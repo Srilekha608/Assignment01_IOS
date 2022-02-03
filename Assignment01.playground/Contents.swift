@@ -83,10 +83,10 @@ var b =  103;
 
 if (a % 10 == b % 10 )
 {
- print ("The last two digits of the two given integer values are same")
+ print ("last digit of both a and b are same")
 }
 else {
-    print("The last two digits of the two given integer values are same")
+    print("last digit of both a and b are not same")
 }
 print("\r------------------------------")
 
