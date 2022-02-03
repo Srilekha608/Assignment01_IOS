@@ -15,8 +15,8 @@ let maxWeight:Int = 130;
 
 // 1.c) Print  "Your max weight is xxxx pounds", replacing the xxxx with the value of maxWeight. Use String interpolation
 
-print("Your max weight is \(maxWeight) pounds");
-print("\r------------------------------")
+print("Your max weight is \(maxWeight)");
+print("------------------------------")
 
 
 // 1.d) Write Swift source code to print the below in one single print statement
@@ -31,7 +31,7 @@ print ("""
        Hello,All
        Welcome to Swift Programming..!
        """);
-print("\r------------------------------")
+print("------------------------------")
 
 //**************** END OF QUESTION 1 ****************
 
@@ -64,18 +64,18 @@ var z:Int = 5;
 
 if((x1 > y1) && (x1 > z))
 {
-    print(" \(x1) is greater")
+    print(" x1 is greater")
 }
  else if((y1 > x1) && (y1 > z))
 {
-    print(" \(y1) is greater")
+    print(" y is greater")
 }
 else
 {
-    print(" \(z) is greater")
+    print(" z is greater")
     
 }
-print("\r------------------------------")
+print("------------------------------")
 
 //3.b) Declare 2 variables a,b and assign values 13, 103. Write a swift code to check whether the last digit of the two given  integer values are same or not.
 var a = 13 ;
@@ -88,7 +88,7 @@ if (a % 10 == b % 10 )
 else {
     print("last digit of both a and b are not same")
 }
-print("\r------------------------------")
+print("------------------------------")
 
 //**************** END OF QUESTION 3 ****************
 
@@ -147,8 +147,6 @@ for i in (1..<C).reversed(){
         print("")
     
 }
-
-
 print("------------------------------")
 
 
@@ -166,16 +164,19 @@ if((string[string.startIndex]).uppercased() == "A"){
  
 print("A" + string)
 }
+print("------------------------------")
 
 //5.b) Declare a String str1 and and assign the value of your own. Write a swift code to add the last character at the front and back of the given string and print it.
 var str1:String = "rilekha"
 var result = str1[str1.index(before: str1.endIndex)]
              print("\(result)\(str1)\(result)")
+print("------------------------------")
 
 //5.c) Declare a String Swift and print them in the reverse order.
 var str = "Srilekha"
 var reverseStr = String(str.reversed())
 print(reverseStr)
+print("------------------------------")
 
 
 
@@ -189,10 +190,15 @@ if myString1.first == myString1.last {
     myString1.remove(at: myString1.index(before: myString1.endIndex))
     print(myString1)
 }
+print("------------------------------")
 
 
 //**************** END OF QUESTION 5 ****************
  
+
+
+
+
 
 
 
